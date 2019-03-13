@@ -11,6 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val version = Version("", 7)
-        Log.d("YVERSION", version.current())
+        version.current()
     }
 }
