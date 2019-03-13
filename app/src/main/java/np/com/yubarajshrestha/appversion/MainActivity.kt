@@ -2,6 +2,7 @@ package np.com.yubarajshrestha.appversion
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import np.com.yubarajshrestha.version.Version
 
 class MainActivity : AppCompatActivity() {
@@ -10,6 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val version = Version("", 7)
-        version.current()
+        Log.d("YVERSION", version.current())
     }
 }
